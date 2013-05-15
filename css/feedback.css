@@ -1,0 +1,13 @@
+form[name=feedback_form]						{ font-size:1.2em; }
+	form[name=feedback_form] input				{ padding:4px 8px; width:80%; }
+	form[name=feedback_form] textarea			{ padding:4px 8px; width:80%; }
+	form[name=feedback_form] label				{ display:block; }
+	form[name=feedback_form] button			{  }
+	
+form[name=footer_feedback_form]				{ font-size:1.2em; }
+	form[name=footer_feedback_form] input		{ padding:4px 8px; width:80%; }
+	form[name=footer_feedback_form] textarea	{ padding:4px 8px; width:80%; }
+	form[name=footer_feedback_form] label		{ display:block; }
+	form[name=footer_feedback_form] button	{  }
+	
+.feedback_footer_error						{ background-color: #faa; }

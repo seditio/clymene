@@ -15,6 +15,9 @@ defined('COT_CODE') or die('Wrong URL.');
  * Данный файл предназначен для дополнительных пользовательских локализационных строк
  */
 
+$L['Address'] = 'Адрес';
 $L['Contact'] = 'Контакт';
+$L['Fax'] = 'Факс';
 $L['Follow_Twitter'] = 'Follow us on Twitter!';
+$L['Phone'] = 'Телефон';
 $L['Sitemap'] = 'Карта сайта';

@@ -1,17 +1,91 @@
-/* 0. Elements
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic-ext);
+
+/* 0. Basic
 -------------------------------------------------- */
 
+body		{ color:#333; font-family:'Open Sans', sans-serif; font-size:13px; }
 
+a			{  }
+a:hover		{ text-decoration:none; }
 
 /* 1. Main Elements
 -------------------------------------------------- */
 
-header		{ background:#555; }
-	header p	{ margin-bottom:0; }
+header		{ padding:20px 0 15px; background:#222; border-top:5px solid #f00; }
+	header a	{ color:#eee; font-size:24px; }
+	header p	{ color:#ccc; margin-bottom:0; }
+	
+section#main		{ padding:20px 0; }
+section#feedback	{ padding:20px 0; }
+	
+.widget		{ margin:0 0 20px; }
+
+footer				{ color:#ccc; font-size:12px; line-height:18px; background:#111; }
+	footer div.widget	{ margin:20px 0; }
+	
+section#copyright			{ color:#666; font-size:11px; padding:8px 0 0; background:#222; border-top:1px solid #444; border-bottom:5px solid #f00; }
+	section#copyright a		{ color:#ccc; }
+	section#copyright ul		{ margin:0; }
+	section#copyright ul li		{ margin:0 10px 0 0; display:block; float:left; }
+	section#copyright a:hover	{ text-decoration:underline; }
 
 /* 2. Navigation
 -------------------------------------------------- */
 
-nav			{ background:#666; }
-	nav ul	{ margin:0; }
-	nav ul li	{ margin:0; list-style:none; float:left; }
+nav						{ background:#111; border-top:1px solid #444; }
+	nav ul				{ margin:0; }
+	nav ul li				{ line-height:30px; margin:0 0 0 15px; height:30px; list-style:none; float:left; }
+	nav ul li:first-child	{ margin:0; }
+	nav ul li a				{ color:#fff; }
+	
+/* 3. Headings
+-------------------------------------------------- */
+
+h1		{ font-size:24px; line-height:36px; margin:0 0 10px; }
+h2		{ font-size:18px; line-height:24px; margin:0; }
+h3		{  }
+h4		{  }
+h5		{  }
+h6		{ color:#eee; font-size:15px; padding:0 0 5px; border-bottom:1px solid #999; }
+	
+/* 4. Forms
+-------------------------------------------------- */
+
+input[name=rverify]		{ float:right; }
+input[name=rverify] + p	{ margin:5px 10px 0 0; float:right; }
+
+/* 5. Lists
+-------------------------------------------------- */
+
+#contacts label		{ font-size:13px; font-weight:bold; margin:0; }
+#contacts label + p	{ color:#999; }
+
+/* 99. Misc
+-------------------------------------------------- */
+
+.spaced		{ margin:0 5px; }
+.small		{ font-size:11px; }
+.strong		{ font-weight:bold; }
+
+.textbox	{ margin-bottom:20px; }
+
+.width5		{ width:5%; }
+.width10	{ width:10%; }
+.width15	{ width:15%; }
+.width20	{ width:20%; }
+.width25	{ width:25%; }
+.width30	{ width:30%; }
+.width35	{ width:35%; }
+.width40	{ width:40%; }
+.width45	{ width:45%; }
+.width50	{ width:50%; }
+.width55	{ width:55%; }
+.width60	{ width:60%; }
+.width65	{ width:65%; }
+.width70	{ width:70%; }
+.width75	{ width:75%; }
+.width80	{ width:80%; }
+.width85	{ width:85%; }
+.width90	{ width:90%; }
+.width95	{ width:95%; }
+.width100	{ width:100%; }

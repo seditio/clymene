@@ -16,10 +16,15 @@ defined('COT_CODE') or die('Wrong URL.');
 //cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/css/default.css');
 
 cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/css/modalbox.css');
+
 cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/css/bootstrap.min.css');
 cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/css/bootstrap-responsive.min.css');
+
 cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/css/font-awesome.min.css');
+
 cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/css/styles.css');
+cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/css/overrides.css');
+
 cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/js/bootstrap.min.js');
-cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/js/jquery.tweet.js');
+//cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/js/jquery.tweet.js');
 cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/js/js.js');
