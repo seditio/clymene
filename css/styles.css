@@ -1,0 +1,17 @@
+/* 0. Elements
+-------------------------------------------------- */
+
+
+
+/* 1. Main Elements
+-------------------------------------------------- */
+
+header		{ background:#555; }
+	header p	{ margin-bottom:0; }
+
+/* 2. Navigation
+-------------------------------------------------- */
+
+nav			{ background:#666; }
+	nav ul	{ margin:0; }
+	nav ul li	{ margin:0; list-style:none; float:left; }
