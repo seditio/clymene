@@ -4,3 +4,5 @@ form[name=pageform] input		{ margin:0; }
 form[name=pageform] textarea	{ margin:0; }
 form[name=pageform] select	{ margin:0; width:auto; }
 form[name=pageform] label		{ display:inline-block; }
+
+.alert ul					{ margin:0; list-style:none; }

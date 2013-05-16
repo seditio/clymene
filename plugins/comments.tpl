@@ -1,5 +1,5 @@
 <!-- BEGIN: MAIN -->
-		<div class="widget">
+		<div class="">
 <!-- BEGIN: COMMENTS_TITLE -->
 			<h5><a href="{COMMENTS_TITLE_URL}">{COMMENTS_TITLE}</a></h5>
 <!-- END: COMMENTS_TITLE -->
@@ -45,14 +45,14 @@
 
 		<div class="widget" style="display:{COMMENTS_DISPLAY}">
 <!-- BEGIN: COMMENTS_ROW -->
-				<div class="comments1">
-					<p>{COMMENTS_ROW_AUTHOR_AVATAR}</p>
-					<p><a href="{COMMENTS_ROW_URL}" id="c{COMMENTS_ROW_ID}">{COMMENTS_ROW_ORDER}.</a> {COMMENTS_ROW_AUTHOR}</p>
-					<p>{COMMENTS_ROW_DATE}</p>
-				</div>
-				<div class="comments2">
-					<p>{COMMENTS_ROW_TEXT}</p>
-					{COMMENTS_ROW_ADMIN}{COMMENTS_ROW_EDIT}
+				<div class="comment">
+					<div class="comment-thumbnail pull-left">{COMMENTS_ROW_AUTHOR_AVATAR}</div>
+					<div class="comment-body">
+						<div class="comment-content">{COMMENTS_ROW_TEXT}</div>
+						<div class="comment-meta text-right">
+							<a href="{COMMENTS_ROW_URL}" id="c{COMMENTS_ROW_ID}">{COMMENTS_ROW_ORDER}.</a> {COMMENTS_ROW_AUTHOR} {COMMENTS_ROW_DATE_STAMP|cot_date('d.m.Y',$this)} {COMMENTS_ROW_ADMIN} {COMMENTS_ROW_EDIT}
+						</div>
+					</div>
 				</div>
 <!-- END: COMMENTS_ROW -->
 
@@ -64,23 +64,26 @@
 <!-- END: PAGNAVIGATOR -->
 
 <!-- BEGIN: COMMENTS_NEWCOMMENT -->
-				<div class="row">
+				<div>
 					<h5>{PHP.L.Newcomment}</h5>
 					{FILE "{PHP.cfg.themes_dir}/admin/lotus/warnings.tpl"}
-					<form action="{COMMENTS_FORM_SEND}" method="post" name="newcomment">
-
+					<form action="{COMMENTS_FORM_SEND}" method="post" name="newcomment" class="row">
 <!-- BEGIN: GUEST -->
-						<div class="span4">{PHP.L.Name}: {COMMENTS_FORM_AUTHOR}</div>
+						<div class="span4">
+							<label for="rname">{PHP.L.Name}</label> {COMMENTS_FORM_AUTHOR}
+						</div>
+<!-- IF {COMMENTS_FORM_VERIFYIMG} -->
+						<div class="span4 pull-right">
+							{COMMENTS_FORM_VERIFY}
+							<p>{COMMENTS_FORM_VERIFYIMG}</p>
+						</div>
+<!-- ENDIF -->
 <!-- END: GUEST -->
-
-						<div>
-							{COMMENTS_FORM_TEXT}
+						<div class="span8">
+							<p>{COMMENTS_FORM_TEXT}</p>
 						</div>
 
-						<!-- IF {PHP.usr.id} == 0 AND {COMMENTS_FORM_VERIFYIMG} -->
-						<div>{COMMENTS_FORM_VERIFYIMG}: {COMMENTS_FORM_VERIFY}</div>
-						<!-- ENDIF -->
-						<div class="margin10 textcenter">
+						<div class="span8">
 							<button type="submit" class="btn btn-primary">{PHP.L.Submit}</button>
 						</div>
 					</form>

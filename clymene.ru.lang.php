@@ -21,3 +21,4 @@ $L['Fax'] = 'Факс';
 $L['Follow_Twitter'] = 'Follow us on Twitter!';
 $L['Phone'] = 'Телефон';
 $L['Sitemap'] = 'Карта сайта';
+$L['Yr'] = ' г.';

@@ -1,5 +1,15 @@
 <!-- BEGIN: MAIN -->
 
+	<section id="breadcrumbs">
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					{LIST_RES_BREADCRUMBS}
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section id="main">
 		<div class="container">
 			<div class="row">

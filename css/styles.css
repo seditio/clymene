@@ -54,12 +54,29 @@ h6		{ color:#eee; font-size:15px; padding:0 0 5px; border-bottom:1px solid #999;
 input[name=rverify]		{ float:right; }
 input[name=rverify] + p	{ margin:5px 10px 0 0; float:right; }
 
+form[name=newcomment] label	{ font-size:13px; margin:5px 10px 0 0; float:left; }
+
 /* 5. Lists
 -------------------------------------------------- */
 
 #contacts label		{ font-size:13px; font-weight:bold; margin:0; }
 #contacts label + p	{ color:#999; }
 
+#breadcrumbs						{ margin:30px 0 0; }
+	#breadcrumbs ul					{ margin:0; list-style:none; overflow:hidden; }
+	#breadcrumbs ul li					{ margin:0 0 0 10px; display:block; float:left; }
+	#breadcrumbs ul li:first-child		{ margin:0; }
+
+/* 6. Comments
+-------------------------------------------------- */
+
+.comment					{ margin:0 0 20px; overflow:hidden; }
+	.comment-thumbnail		{ margin:5px 10px 0 0; padding:4px; border:1px solid #ddd; background:#fff; clear:both; }
+	.comment-thumbnail img	{ width:60px; }
+	.comment-meta			{ color:#999; font-size:11px; }
+	.comment-body			{ position:relative; overflow:hidden; }
+	.comment-content		{ }
+	
 /* 99. Misc
 -------------------------------------------------- */
 
@@ -67,7 +84,7 @@ input[name=rverify] + p	{ margin:5px 10px 0 0; float:right; }
 .small		{ font-size:11px; }
 .strong		{ font-weight:bold; }
 
-.textbox	{ margin-bottom:20px; }
+.textbox	{ margin-bottom:10px; }
 
 .width5		{ width:5%; }
 .width10	{ width:10%; }
