@@ -18,10 +18,10 @@ header		{ padding:20px 0 15px; background:#222; border-top:5px solid #f00; }
 section#main		{ padding:20px 0; }
 section#feedback	{ padding:20px 0; }
 	
-.widget		{ margin:0 0 20px; }
+.block		{ margin:0 0 20px; }
 
 footer				{ color:#ccc; font-size:12px; line-height:18px; background:#111; }
-	footer div.widget	{ margin:20px 0; }
+	footer div.block	{ margin:20px 0; }
 	
 section#copyright			{ color:#666; font-size:11px; padding:8px 0 0; background:#222; border-top:1px solid #444; border-bottom:5px solid #f00; }
 	section#copyright a		{ color:#ccc; }

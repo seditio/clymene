@@ -3,8 +3,12 @@
 	<section id="feedback">
 		<div class="container">
 			<div class="row">
-				<div class="span8 field">
+				<div class="span12">
 					<h1>{PHP.L.feedback_title}</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span8 field">
 <!-- BEGIN: FORM -->
 						<form action="{CONTACT_FORM_SEND}" method="post" name="feedback_form" class="row">
 							<div class="span4">
@@ -42,7 +46,7 @@
 				</div>
 				<div class="span4">
 					<aside>
-						<div class="widget">
+						<div class="block">
 							<h5><i class="icon-phone"></i> {PHP.L.feedback_subtitle}</h5>
 							<address>
 								<ul id="contacts" class="unstyled">

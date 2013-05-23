@@ -1,8 +1,10 @@
-label input[type=radio]	{ margin:-4px 0 0; }
+#normalize input			{ margin:0; }
+#normalize textarea		{ margin:0; width:auto; }
+#normalize select			{ margin:0; width:auto; }
+#normalize label			{ display:inline-block; }
+#normalize p				{ margin:0; }
+#normalize ul			{ margin:0; list-style:none; }
 
-form[name=pageform] input		{ margin:0; }
-form[name=pageform] textarea	{ margin:0; }
-form[name=pageform] select	{ margin:0; width:auto; }
-form[name=pageform] label		{ display:inline-block; }
+label input[type=radio]	{ margin:-4px 0 0!important; }
 
-.alert ul					{ margin:0; list-style:none; }
+.alert ul				{ margin:0; list-style:none; }

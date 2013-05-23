@@ -41,6 +41,8 @@
 	</div>
 <!-- END: PAGE_ROW -->
 
-	<p class="paging">{PAGE_PAGEPREV}{PAGE_PAGENAV}{PAGE_PAGENEXT}</p>
+	<div class="pagination">
+		<ul>{PAGE_PAGEPREV}{PAGE_PAGENAV}{PAGE_PAGENEXT}</ul>
+	</div>
 
 <!-- END: NEWS -->

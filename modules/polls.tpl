@@ -1,7 +1,7 @@
 <!-- BEGIN: MAIN -->
 
 <!-- BEGIN: POLLS_VIEW -->
-		<section id="main">
+	<section id="main">
 		<div class="container">
 			<div class="row">
 				<div class="span12">
@@ -11,7 +11,7 @@
 			{POLLS_FORM}
 			<!-- {PHP.L.comments_comments}: {POLLS_COMMENTS}{POLLS_COMMENTS_DISPLAY} -->
 		</div>
-		</section>
+	</section>
 <!-- END: POLLS_VIEW -->
 
 <!-- BEGIN: POLLS_VIEWALL -->

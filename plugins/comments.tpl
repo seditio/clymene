@@ -38,69 +38,65 @@
 <!-- END: MAIN -->
 
 <!-- BEGIN: COMMENTS -->
-
-					<div class="row">
-						<div class="span8">
-							<a name="comments"></a>
-
-		<div class="widget" style="display:{COMMENTS_DISPLAY}">
+		<div class="row">
+			<div class="span8">
+				<a name="comments"></a>
+				<div class="block" style="display:{COMMENTS_DISPLAY}">
 <!-- BEGIN: COMMENTS_ROW -->
-				<div class="comment">
-					<div class="comment-thumbnail pull-left">{COMMENTS_ROW_AUTHOR_AVATAR}</div>
-					<div class="comment-body">
-						<div class="comment-content">{COMMENTS_ROW_TEXT}</div>
-						<div class="comment-meta text-right">
-							<a href="{COMMENTS_ROW_URL}" id="c{COMMENTS_ROW_ID}">{COMMENTS_ROW_ORDER}.</a> {COMMENTS_ROW_AUTHOR} {COMMENTS_ROW_DATE_STAMP|cot_date('d.m.Y',$this)} {COMMENTS_ROW_ADMIN} {COMMENTS_ROW_EDIT}
+					<div class="comment">
+						<div class="comment-thumbnail pull-left">{COMMENTS_ROW_AUTHOR_AVATAR}</div>
+						<div class="comment-body">
+							<div class="comment-content">{COMMENTS_ROW_TEXT}</div>
+							<div class="comment-meta text-right">
+								<a href="{COMMENTS_ROW_URL}" id="c{COMMENTS_ROW_ID}">{COMMENTS_ROW_ORDER}.</a> {COMMENTS_ROW_AUTHOR} {COMMENTS_ROW_DATE_STAMP|cot_date('d.m.Y',$this)} {COMMENTS_ROW_ADMIN} {COMMENTS_ROW_EDIT}
+							</div>
 						</div>
 					</div>
-				</div>
 <!-- END: COMMENTS_ROW -->
 
 <!-- BEGIN: PAGNAVIGATOR -->
-				<!-- IF {COMMENTS_PAGES_PAGNAV} -->
-				<p class="paging">{COMMENTS_PAGES_PAGESPREV}{COMMENTS_PAGES_PAGNAV}{COMMENTS_PAGES_PAGESNEXT}</p>
-				<p class="paging"><span>{COMMENTS_PAGES_INFO}</span></p>
-				<!-- ENDIF -->
+<!-- IF {COMMENTS_PAGES_PAGNAV} -->
+					<div class="pagination">
+						<ul>{COMMENTS_PAGES_PAGESPREV}{COMMENTS_PAGES_PAGNAV}{COMMENTS_PAGES_PAGESNEXT}</ul>
+					</div>
+					<p>{COMMENTS_PAGES_INFO}</p>
+<!-- ENDIF -->
 <!-- END: PAGNAVIGATOR -->
 
 <!-- BEGIN: COMMENTS_NEWCOMMENT -->
-				<div>
-					<h5>{PHP.L.Newcomment}</h5>
-					{FILE "{PHP.cfg.themes_dir}/admin/lotus/warnings.tpl"}
-					<form action="{COMMENTS_FORM_SEND}" method="post" name="newcomment" class="row">
+					<div>
+						<h5>{PHP.L.Newcomment}</h5>
+						{FILE "{PHP.cfg.themes_dir}/admin/lotus/warnings.tpl"}
+						<form action="{COMMENTS_FORM_SEND}" method="post" name="newcomment" class="row">
 <!-- BEGIN: GUEST -->
-						<div class="span4">
-							<label for="rname">{PHP.L.Name}</label> {COMMENTS_FORM_AUTHOR}
-						</div>
+							<div class="span4">
+								<label for="rname">{PHP.L.Name}</label> {COMMENTS_FORM_AUTHOR}
+							</div>
 <!-- IF {COMMENTS_FORM_VERIFYIMG} -->
-						<div class="span4 pull-right">
-							{COMMENTS_FORM_VERIFY}
-							<p>{COMMENTS_FORM_VERIFYIMG}</p>
-						</div>
+							<div class="span4 pull-right">
+								{COMMENTS_FORM_VERIFY}
+								<p>{COMMENTS_FORM_VERIFYIMG}</p>
+							</div>
 <!-- ENDIF -->
 <!-- END: GUEST -->
-						<div class="span8">
-							<p>{COMMENTS_FORM_TEXT}</p>
-						</div>
+							<div class="span8">
+								<p>{COMMENTS_FORM_TEXT}</p>
+							</div>
 
-						<div class="span8">
-							<button type="submit" class="btn btn-primary">{PHP.L.Submit}</button>
-						</div>
-					</form>
-					<div class="alert alert-info">{COMMENTS_FORM_HINT}</div>
-				</div>
-<!-- END: COMMENTS_NEWCOMMENT -->
-
-<!-- BEGIN: COMMENTS_EMPTY -->
-				<div class="alert">{COMMENTS_EMPTYTEXT}</div>
-<!-- END: COMMENTS_EMPTY -->
-
-<!-- BEGIN: COMMENTS_CLOSED -->
-				<div class="alert">{COMMENTS_CLOSED}</div>
-<!-- END: COMMENTS_CLOSED -->
-		</div>
-		
-						</div>
+							<div class="span8">
+								<button type="submit" class="btn btn-primary">{PHP.L.Submit}</button>
+							</div>
+						</form>
+						<div class="alert alert-info">{COMMENTS_FORM_HINT}</div>
 					</div>
-
+<!-- END: COMMENTS_NEWCOMMENT -->
+<!-- BEGIN: COMMENTS_EMPTY -->
+					<div class="alert">{COMMENTS_EMPTYTEXT}</div>
+<!-- END: COMMENTS_EMPTY -->
+<!-- BEGIN: COMMENTS_CLOSED -->
+					<div class="alert">{COMMENTS_CLOSED}</div>
+<!-- END: COMMENTS_CLOSED -->
+				</div>
+			</div>
+		</div>
 <!-- END: COMMENTS -->

@@ -35,14 +35,19 @@
 <!-- END: LIST_ROW -->
 
 <!-- IF {LIST_TOP_PAGINATION} -->
-					<p class="paging clear"><span>{PHP.L.Page} {LIST_TOP_CURRENTPAGE} {PHP.L.Of} {LIST_TOP_TOTALPAGES}</span>{LIST_TOP_PAGEPREV}{LIST_TOP_PAGINATION}{LIST_TOP_PAGENEXT}</p>
+					<p class="text-center">{PHP.L.Page} {LIST_TOP_CURRENTPAGE} {PHP.L.Of} {LIST_TOP_TOTALPAGES}</p>
+					<div class="pagination">
+						<ul>
+							{LIST_TOP_PAGEPREV}{LIST_TOP_PAGINATION}{LIST_TOP_PAGENEXT}
+						</ul>
+					</div>
 <!-- ENDIF -->
 
 				</div>
 
 				<div class="span4">
 <!-- IF {PHP.usr.auth_write} -->
-					<div class="widget">
+					<div class="block">
 						<h5>{PHP.L.Admin}</h5>
 						<ul class="unstyled">
 							<!-- IF {PHP.usr.isadmin} -->
@@ -52,7 +57,7 @@
 						</ul>
 					</div>
 <!-- ENDIF -->
-					<div class="widget">
+					<div class="block">
 						<h5>{PHP.L.Tags}</h5>
 						{LIST_TAG_CLOUD}
 					</div>

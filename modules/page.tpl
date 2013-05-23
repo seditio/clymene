@@ -48,7 +48,7 @@
 				</div>
 				<div class="span4">
 <!-- BEGIN: PAGE_ADMIN -->
-					<div class="widget">
+					<div class="block">
 						<h5>{PHP.L.Adminpanel}</h5>
 						<ul class="unstyled">
 							<!-- IF {PHP.usr.isadmin} -->
@@ -59,6 +59,9 @@
 							<li><i class="icon-edit"></i> {PAGE_ADMIN_EDIT}</li>
 							<li><i class="icon-copy"></i> {PAGE_ADMIN_CLONE}</li>
 							<li><i class="icon-remove"></i> {PAGE_ADMIN_DELETE}</li>
+<!-- IF {PHP|cot_auth('plug', 'attach2', 'W')} -->
+							<li>{PAGE_ID|att_widget('page',$this,'attach2.link')}</li>
+<!-- ENDIF -->
 						</ul>
 					</div>
 <!-- END: PAGE_ADMIN -->

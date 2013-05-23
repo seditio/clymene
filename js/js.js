@@ -1,7 +1,7 @@
 $().ready(function() {
 
-	$('form[name=pageform] input[type=text]').addClass('input-block-level');
-	$('form[name=pageform] textarea[name!=rpagetext]').addClass('input-block-level');
+	$('#normalize input[type=text]').addClass('input-block-level');
+	$('#normalize textarea[name!=rpagetext]').addClass('input-block-level');
 	
 	$('form[name=login] input[type!=checkbox]').addClass('input-block-level').css('margin','0');
 	
