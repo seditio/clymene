@@ -17,6 +17,7 @@ header		{ padding:20px 0 15px; background:#222; border-top:5px solid #f00; }
 	
 section#main		{ padding:20px 0; }
 section#feedback	{ padding:20px 0; }
+section#title	{ margin:30px 0 0; }
 	
 .block		{ margin:0 0 20px; }
 
@@ -61,11 +62,6 @@ form[name=newcomment] label	{ font-size:13px; margin:5px 10px 0 0; float:left; }
 
 #contacts label		{ font-size:13px; font-weight:bold; margin:0; }
 #contacts label + p	{ color:#999; }
-
-#breadcrumbs						{ margin:30px 0 0; }
-	#breadcrumbs ul					{ margin:0; list-style:none; overflow:hidden; }
-	#breadcrumbs ul li					{ margin:0 0 0 10px; display:block; float:left; }
-	#breadcrumbs ul li:first-child		{ margin:0; }
 
 /* 6. Comments
 -------------------------------------------------- */

@@ -29,8 +29,12 @@ $R['link_pagenav_next'] = '<li class="next"><a href="{$url}"{$event}{$rel}>'.$L[
 $R['link_pagenav_first'] = '<li class="disabled"><a href="{$url}"{$event}{$rel}>'.$L['pagenav_first'].'</a></li>';
 $R['link_pagenav_last'] = '<li class="disabled"><a href="{$url}"{$event}{$rel}>'.$L['pagenav_last'].'</a></li>';
 
-// Redefine PM Icon -- not working
+// Not working
 //$R['pm_icon'] = '<i class="icon-arrow-up"></i>';
+//$R['res_breadcrumbs_open'] = '<ul class="breadcrumb">';
+//$R['res_breadcrumbs_item'] = '<li><a href="{$url}" title="{$title}">{$title}</a><span class="divider">/</span></li>';
+//$R['res_breadcrumbs_item_last'] = '<li class="active">{$title}</li>';
+//$R['res_breadcrumbs_close'] = '</ul>';
 
 cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/css/modalbox.css');
 

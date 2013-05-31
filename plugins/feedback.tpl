@@ -1,5 +1,18 @@
 <!-- BEGIN: MAIN -->
 
+	<section id="title">
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<ul class="breadcrumb">
+						<li><a href="{PHP.cfg.mainurl}">{PHP.L.Home}</a> <span class="divider">/</span></li>
+						<li class="active">{PHP.L.feedback_title}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section id="feedback">
 		<div class="container">
 			<div class="row">
