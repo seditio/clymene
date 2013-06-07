@@ -30,17 +30,7 @@
 				
 				<div class="span3">
 <!-- IF {PHP.usr.isadmin} -->
-					<div class="block">
-						<h5>{PHP.L.Admin}</h5>
-						<ul class="unstyled">
-							<li><a href="{PHP|cot_url('admin')}">{PHP.L.Adminpanel}</a></li>
-							<li><a href="{PHP|cot_url('users')}">{PHP.L.Users}</a></li>
-							<li><a href="{PHP|cot_url('users','m=profile')}">{PHP.L.Profile}</a></li>
-							<li><a href="{PHP|cot_url('pfs')}">{PHP.L.PFS}</a></li>
-							<li><a href="{PHP|cot_url('plug','e=whosonline')}">{PHP.themelang.index.Online}</a></li>
-							<li>{PHP.out.loginout}</li>
-						</ul>
-					</div>
+{FILE "{PHP.cfg.themes_dir}/{PHP.theme}/inc/admin-index.tpl"}
 <!-- ENDIF -->
 <!-- IF {PHP.out.whosonline} -->
 					<div class="block">

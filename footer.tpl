@@ -34,7 +34,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="span6">
-						<ul>
+						<ul class="clearfix">
 {FILE "themes/{PHP.theme}/inc/nav.tpl"}
 						</ul>
 					</div>

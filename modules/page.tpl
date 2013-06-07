@@ -47,25 +47,11 @@
 {PAGE_COMMENTS_DISPLAY}
 				</div>
 				<div class="span4">
+{PHP|feedback_form('','feedback.global','test')}
 <!-- BEGIN: PAGE_ADMIN -->
-					<div class="block">
-						<h5>{PHP.L.Adminpanel}</h5>
-						<ul class="unstyled">
-							<!-- IF {PHP.usr.isadmin} -->
-							<li><i class="icon-cog"></i> <a href="{PHP|cot_url('admin')}">{PHP.L.Adminpanel}</a></li>
-							<!-- ENDIF -->
-							<li><i class="icon-file"></i> <a href="{PAGE_CAT|cot_url('page','m=add&c=$this')}">{PHP.L.page_addtitle}</a></li>
-							<li><i class="icon-ban-circle"></i> {PAGE_ADMIN_UNVALIDATE}</li>
-							<li><i class="icon-edit"></i> {PAGE_ADMIN_EDIT}</li>
-							<li><i class="icon-copy"></i> {PAGE_ADMIN_CLONE}</li>
-							<li><i class="icon-remove"></i> {PAGE_ADMIN_DELETE}</li>
-<!-- IF {PHP|cot_auth('plug', 'attach2', 'W')} -->
-							<li>{PAGE_ID|att_widget('page',$this,'attach2.link')}</li>
-<!-- ENDIF -->
-						</ul>
-					</div>
+{FILE "{PHP.cfg.themes_dir}/{PHP.theme}/inc/admin-page.tpl"}
 <!-- END: PAGE_ADMIN -->
-					{FILE "{PHP.cfg.themes_dir}/{PHP.theme}/inc/contact.tpl"}
+{FILE "{PHP.cfg.themes_dir}/{PHP.theme}/inc/contact.tpl"}
 				</div>
 			</div>
 		</div>

@@ -47,21 +47,13 @@
 
 				<div class="span4">
 <!-- IF {PHP.usr.auth_write} -->
-					<div class="block">
-						<h5>{PHP.L.Admin}</h5>
-						<ul class="unstyled">
-							<!-- IF {PHP.usr.isadmin} -->
-							<li><i class="icon-cog"></i> <a href="{PHP|cot_url('admin')}">{PHP.L.Adminpanel}</a></li>
-							<!-- ENDIF -->
-							<li><i class="icon-file-alt"></i> {LIST_SUBMITNEWPAGE}</li>
-						</ul>
-					</div>
+{FILE "{PHP.cfg.themes_dir}/{PHP.theme}/inc/admin-list.tpl"}
 <!-- ENDIF -->
 					<div class="block">
 						<h5>{PHP.L.Tags}</h5>
 						{LIST_TAG_CLOUD}
 					</div>
-	{FILE "{PHP.cfg.themes_dir}/{PHP.theme}/inc/contact.tpl"}
+{FILE "{PHP.cfg.themes_dir}/{PHP.theme}/inc/contact.tpl"}
 				</div>
 				
 			</div>
