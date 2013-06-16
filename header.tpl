@@ -32,9 +32,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="span12">
-					<ul class="clearfix">
+					<div class="navbar">
+						<div class="navbar-inner">
+<!-- BEGIN: NOPARSE -->
+							<a class="brand" href="#">Title</a>
+<!-- END: NOPARSE -->
+							<ul class="nav">
 {FILE "themes/{PHP.theme}/inc/nav.tpl"}
-					</ul>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

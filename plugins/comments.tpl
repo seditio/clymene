@@ -64,7 +64,7 @@
 <!-- END: PAGNAVIGATOR -->
 
 <!-- BEGIN: COMMENTS_NEWCOMMENT -->
-					<div>
+					<div class="clearfix">
 						<h5>{PHP.L.Newcomment}</h5>
 						{FILE "{PHP.cfg.themes_dir}/admin/lotus/warnings.tpl"}
 						<form action="{COMMENTS_FORM_SEND}" method="post" name="newcomment" class="row">

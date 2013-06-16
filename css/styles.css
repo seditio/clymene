@@ -11,7 +11,7 @@ a:hover		{ text-decoration:none; }
 /* 1. Main Elements
 -------------------------------------------------- */
 
-header		{ padding:20px 0 15px; background:#222; border-top:5px solid #f00; }
+header		{ padding:20px 0; }
 	header a	{ color:#eee; font-size:24px; }
 	header p	{ color:#ccc; margin-bottom:0; }
 	
@@ -33,11 +33,7 @@ section#copyright			{ color:#666; font-size:11px; padding:8px 0 0; background:#2
 /* 2. Navigation
 -------------------------------------------------- */
 
-nav						{ background:#111; border-top:1px solid #444; }
-	nav ul				{ margin:0; }
-	nav ul li				{ line-height:30px; margin:0 0 0 15px; height:30px; list-style:none; float:left; }
-	nav ul li:first-child	{ margin:0; }
-	nav ul li a				{ color:#fff; }
+nav						{  }
 	
 /* 3. Headings
 -------------------------------------------------- */
@@ -61,11 +57,11 @@ form[name=newcomment] label	{ font-size:13px; margin:5px 10px 0 0; float:left; }
 -------------------------------------------------- */
 
 #adminpanel						{  }
-	#adminpanel li				{ margin:1px 0 ; position:relative; }
-	#adminpanel li:first-child	{ margin:0; }
-	#adminpanel li span			{ margin-top:-12.5px; position:absolute; top:50%; left:15px; }
-	#adminpanel li a				{ color:#666; font-size:11px; text-transform:uppercase; padding:8px 0 7px 45px; background:#eee; border-radius:2px; display:block; }
-	#adminpanel li a:hover			{ background:#ddd; }
+	#adminpanel>li				{ margin:1px 0 ; position:relative; }
+	#adminpanel>li:first-child	{ margin:0; }
+	#adminpanel>li>span			{ margin-top:-12.5px; position:absolute; top:50%; left:15px; }
+	#adminpanel>li>a				{ color:#666; font-size:11px; text-transform:uppercase; padding:8px 0 7px 45px; background:#eee; border-radius:2px; display:block; }
+	#adminpanel>li>a:hover		{ background:#ddd; }
 
 #contacts label		{ font-size:13px; font-weight:bold; margin:0; }
 #contacts label + p	{ color:#999; }
