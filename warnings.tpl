@@ -1,5 +1,6 @@
 <!-- BEGIN: ERROR -->
-<div class="error">
+<div class="alert alert-error">
+	<a class="close" data-dismiss="alert"><i class="icon-remove"></i></a>
 	<h4>{PHP.L.Error}</h4>
 	<ul>
 		<!-- BEGIN: ERROR_ROW -->
@@ -10,7 +11,8 @@
 <!-- END: ERROR -->
 
 <!-- BEGIN: WARNING -->
-<div class="warning">
+<div class="alert alert-warning">
+	<a class="close" data-dismiss="alert"><i class="icon-remove"></i></a>
 	<h4>{PHP.L.Warning}</h4>
 	<ul>
 		<!-- BEGIN: WARNING_ROW -->
@@ -21,7 +23,8 @@
 <!-- END: WARNING -->
 
 <!-- BEGIN: DONE -->
-<div class="done">
+<div class="alert alert-info">
+	<a class="close" data-dismiss="alert"><i class="icon-remove"></i></a>
 	<h4>{PHP.L.Done}</h4>
 	<ul>
 		<!-- BEGIN: DONE_ROW -->

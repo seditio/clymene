@@ -12,6 +12,10 @@
 {HEADER_HEAD}
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<!--[if lt IE 9]>
+<script src="themes/{PHP.theme}/js/html5shiv.js"></script>
+<script src="themes/{PHP.theme}/js/respond.min.js"></script>
+<![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 

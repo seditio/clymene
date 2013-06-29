@@ -9,6 +9,20 @@
 								</span>
 								<a href="{PHP|cot_url('admin')}">{PHP.L.Adminpanel}</a>
 							</li>
+							<li>
+								<span class="icon-stack">
+									<i class="icon-sign-blank icon-stack-base"></i>
+									<i class="icon-cog icon-light"></i>
+								</span>
+								<a href="admin.php?m=config&n=edit&o=module&p=page&sub={LIST_CAT}">Настройки раздела</a>
+							</li>
+							<li>
+								<span class="icon-stack">
+									<i class="icon-sign-blank icon-stack-base"></i>
+									<i class="icon-cog icon-light"></i>
+								</span>
+								<a href="admin.php?m=structure&n=page&id={PHP.cat.id}&x={PHP.sys.xk}">Опции раздела</a>
+							</li>
 							<!-- ENDIF -->
 							<li>
 								<span class="icon-stack">
@@ -16,20 +30,6 @@
 									<i class="icon-file icon-light"></i>
 								</span>
 								{LIST_SUBMITNEWPAGE}
-							</li>
-							<li>
-								<span class="icon-stack">
-									<i class="icon-sign-blank icon-stack-base"></i>
-									<i class="icon-cog icon-light"></i>
-								</span>
-								<a href="admin.php?m=structure&n=page&id={PHP.cat.id}&x={PHP.sys.xk}">Настройки раздела</a>
-							</li>
-							<li>
-								<span class="icon-stack">
-									<i class="icon-sign-blank icon-stack-base"></i>
-									<i class="icon-cog icon-light"></i>
-								</span>
-								<a href="admin.php?m=config&n=edit&o=module&p=page&sub={LIST_CAT}">Опции раздела</a>
 							</li>
 <!-- IF {PHP|cot_auth('plug', 'attach2', 'W')} -->
 							<li>
